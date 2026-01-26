@@ -1,0 +1,52 @@
+export/import :
+
+- Export default -> import sin llaves : 
+- Export comun -> import con llaves : 
+
+    ej comun : 
+        //archivo1.jsx
+        export const nombre = "Horacio";
+
+        //archivo2.jsx
+        import {nombre} from "./archivo1";
+
+
+    ej default : 
+        //archivo1.jsx
+        const nombre = "Horacio";
+        export default nombre;
+
+        //archivo2.jsx
+        import nombre from "./archivo1";
+
+
+
+JSX : Es una manera de escribir JS
+
+const parrafo = document.createElement("p");
+parrafo.className = "parrafo"
+parrafo.innerText = "Soy un texto"
+
+<p className="parrafo" >Soy un texto</p>
+
+
+
+Props : Son los parametros de los componentes
+
+
+function saludar( a , b , c , d ){
+
+}
+
+saludar("Hola" , "Horacio" , 32 , false)
+
+<saludar saludo="Hola" nombre="Horacio" edad="32" isFullStack="false" />
+
+
+
+Pre-Entrega 1 : 
+
+- App
+- NavBar : Tiene que ser llamado dentro de App y tiene que mostrar un titulo y una barra de links. 
+- CartWidget : Tiene que ser llamado dentro de NavBar y tiene que mostrar la imagen de un carrito
+- ItemListContainer : Tiene que ser llamado dentro de App, justo debajo del Navbar. Ademas hay que enviarle un prop llamado "greeting" y se tiene que ver su valor en la pantalla.
