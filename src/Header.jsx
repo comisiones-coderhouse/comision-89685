@@ -1,8 +1,19 @@
+import { useState } from "react";
+
 function Header(props) {
 
-    console.log(props);
-    console.log(props.mensaje);
+    //Estados
+    const [items,setItems] = useState(0);
 
+    
+    //Acciones
+    //setItems(10);
+    function agregarAlCarrito(){
+        setItems(10)
+    }
+    
+
+    //Vista
     return (
         <header>
             <h1>{props.mensaje}</h1>
@@ -11,6 +22,10 @@ function Header(props) {
                 <a href="#">link</a>
                 <a href="#">link</a>
             </nav>
+            <button>
+                🛒 {items}
+            </button>
+            <button onClick={agregarAlCarrito}>agregar a carrito</button>
         </header>
     )
 }

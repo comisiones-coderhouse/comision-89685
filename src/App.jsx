@@ -28,10 +28,21 @@ import Footer from './Footer.jsx'
 
 
 function App() {
+  
+  function handleClick(){}
+
   return (
     <>
-      <Header mensaje="Comision 89685"/>
-      <Header mensaje="Soy otra app"/>
+      {/* <Header /> */}
+      {/* <Header mensaje="Soy otra app" /> */}
+      <Header
+        mensaje="Comision 89685"
+        edad={35}
+        llegaHoy={true}
+        hacerAlgo={handleClick}
+        /* hacerAlgo={() => { }} */
+        /* hacerAlgo={function() { }} */
+      />
       <Content />
       <Footer />
     </>

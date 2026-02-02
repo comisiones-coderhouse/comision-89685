@@ -50,3 +50,13 @@ Pre-Entrega 1 :
 - NavBar : Tiene que ser llamado dentro de App y tiene que mostrar un titulo y una barra de links. 
 - CartWidget : Tiene que ser llamado dentro de NavBar y tiene que mostrar la imagen de un carrito
 - ItemListContainer : Tiene que ser llamado dentro de App, justo debajo del Navbar. Ademas hay que enviarle un prop llamado "greeting" y se tiene que ver su valor en la pantalla.
+
+
+
+Hooks : Son funciones que cada una le aporta algo nuevo al componente. Todas comienzan con la palabra "use" y solo se pueden mandar a llamar dentro de un componente. Algunos ya existen (React : useState, useEffect, useRef, useContext, etc...), los podemos crear nosotros o se pueden instalar 
+
+https://react.dev/reference/react/hooks
+https://github.com/streamich/react-use
+
+
+State (Estados) : Es la capacidad que tiene un componente para mantener valores dentro de si mismo y refrescar la vista si alguno cambia. Para crear uno nuevo, necesitamos el hook useState.
