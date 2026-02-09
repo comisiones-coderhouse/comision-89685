@@ -111,3 +111,6 @@ Cosas que faltan :
 
 - HTTP y Promises
 - listas
+
+
+https://lucide.dev/guide/installation
