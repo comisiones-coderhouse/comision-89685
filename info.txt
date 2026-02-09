@@ -60,3 +60,54 @@ https://github.com/streamich/react-use
 
 
 State (Estados) : Es la capacidad que tiene un componente para mantener valores dentro de si mismo y refrescar la vista si alguno cambia. Para crear uno nuevo, necesitamos el hook useState.
+
+
+
+
+
+
+
+
+Destructuring : "separar" un objeto en variables individuales
+
+Sintaxis : 
+
+    - const {unaProp,etc...} = unObjeto
+    - const [pos1,pos2,etc...] = unArray
+
+
+const persona = { nombre : 'Horacio' , edad : 35 , isDev : true}
+
+const {isDev, nombre,edad,} = persona
+
+
+
+
+const frutas = ["manzana", "naranja" , "frutilla"];
+
+const fruta_uno = frutas[0]
+const fruta_dos = frutas[1]
+const fruta_tres = frutas[2]
+
+const [fruta_uno, fruta_dos, fruta_tres] = frutas
+
+
+
+
+OPERADOR TERNARIO : 
+
+if(condicion){
+    return "x"
+} else {
+    return "y"
+}
+
+
+condicion ? "x" : "y"
+
+
+
+Cosas que faltan : 
+
+- HTTP y Promises
+- listas

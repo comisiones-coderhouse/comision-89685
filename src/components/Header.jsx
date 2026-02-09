@@ -1,17 +1,18 @@
 import { useState } from "react";
+import { Button } from 'antd';
+import { Badge } from 'antd';
 
 function Header(props) {
 
     //Estados
-    const [items,setItems] = useState(0);
+    const [items, setItems] = useState(0);
 
-    
+
     //Acciones
-    //setItems(10);
-    function agregarAlCarrito(){
+    function agregarAlCarrito() {
         setItems(10)
     }
-    
+
 
     //Vista
     return (
@@ -22,10 +23,12 @@ function Header(props) {
                 <a href="#">link</a>
                 <a href="#">link</a>
             </nav>
-            <button>
-                🛒 {items}
-            </button>
-            <button onClick={agregarAlCarrito}>agregar a carrito</button>
+            <Badge count={items}>
+                <Button shape="circle">
+                    🛒
+                </Button>
+            </Badge>
+            <Button onClick={agregarAlCarrito}>agregar a carrito</Button>
         </header>
     )
 }
